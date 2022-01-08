@@ -4,5 +4,4 @@ sklearn
 joblib
 optuna
 pytest
-uvicorn
-fastapi
+Flask
