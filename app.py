@@ -28,7 +28,7 @@ encoder3.fit(df2["Country"].astype(str))
 
 model = joblib.load("model.pkl")
 
-@app.route('/predict', methods=['POST'])
+@app.route('/', methods=['POST'])
 def get_prediction():
         
     if request.method == 'POST':
@@ -45,6 +45,10 @@ def get_prediction():
         print(df)
         prediction = model.predict(df)  # runs globally loaded model on the data
     return str(prediction)
+
+@app.route("/", methods=["GET"])
+def display():
+        return "<h1>app</h1>
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
