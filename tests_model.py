@@ -30,4 +30,3 @@ def test_model():
      print(error)
      assert error < 9.0
      
-test_model()
