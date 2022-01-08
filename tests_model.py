@@ -28,6 +28,6 @@ def test_model():
      from sklearn.metrics import mean_squared_error
      error = np.sqrt(mean_squared_error(y,elements_pred))
      print(error)
-     assert error < 0.9
+     assert error < 9.0
      
 test_model()
