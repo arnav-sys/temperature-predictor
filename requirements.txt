@@ -6,3 +6,4 @@ optuna
 pytest
 Flask
 gunicorn
+wsgi
