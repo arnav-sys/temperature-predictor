@@ -5,4 +5,5 @@ joblib
 optuna
 pytest
 Flask
-wsgi
+mod-wsgi
+gunicorn
